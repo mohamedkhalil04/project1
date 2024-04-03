@@ -1,0 +1,1040 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Heading{
+    width: 100%;
+    height: 55px;
+    background-color: rgba(0, 0, 0,0.7);
+    
+    position: fixed;
+    z-index: 10;
+}
+.img-Heading{
+    height:55px ;
+    width:85px ;
+    margin-left: 120px; 
+    
+}
+.list-Heading{
+   float: right;
+   list-style: none;
+   
+}
+.list-Heading div{
+    font-size: 23px;
+    margin-right: 15px;
+    margin-top: 10px;
+    display: inline-block; 
+    
+} 
+.list-Heading  div  a{
+    text-decoration: none;
+    display: block;
+    
+    color:yellow;
+}
+.line-home-v{
+    width: 50px;
+    height: 3px;
+    background-color: yellow;
+}
+.line-Heading{
+        width: 65px;
+        height: 3px;
+        background-color: yellow;
+        visibility: hidden;
+        
+        
+}
+.list-Heading div:hover  .line-Heading{
+    visibility: visible;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+
+.home{
+    background-image: url(../images/wp2639566.jpg);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.overlay-home{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.6);
+    position: absolute;
+}
+.contents-home{
+    width:50%;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.h1-home{
+  color: white;
+  font-size: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.p-home{
+color: rgb(235, 233, 233);
+padding: 25px 0px;
+font-size: 23px;
+}
+.btn-home{
+    border-radius: 5px;
+    border: none;
+    width: 160px; ;
+    padding: 14px  0px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.home-btn1{
+      margin-right: 25px;
+      
+}
+.home-btn1:hover{
+    opacity: 0.8;
+}
+.home-btn2{
+      color: black;
+      background-color:yellow;
+}
+.home-btn2:hover{
+    opacity: 0.8;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+
+.welcome{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.title-welcome{
+text-align: center;
+padding-top:100px ;
+font-size: 35px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}
+.line-welcome{
+height: 4px;
+width: 75px;
+background-color: yellow;
+margin:15px auto;
+}
+.container-welcome{
+width: 80%;
+height: 250px;
+margin:130px auto;
+
+}
+
+.welcome-divs{
+    float: left;
+    width: 30%;
+    height: 100%;
+    border: rgba(255, 255, 255, 0.7)   solid   1px;
+    border-radius: 4px;
+    position: relative;
+    /* background-color: aqua; */
+}
+.welcome-d2{
+    margin: 0  5%;
+}
+.welcome-contents{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 25px  0px;
+    transition: 1s;
+    z-index: 1;
+    /* background-color:white; */
+
+    
+}
+.i-welcome{
+    font-size: 30px;
+    color:yellow;
+    transition: 1s;
+}
+.welcome-h2{
+    /* position: absolute; */
+    font-size: 40px;
+    line-height: 70px;
+    transition: 1s;
+   color: yellow;
+}
+.welcome-p{
+    padding: 15px 0px;
+    font-size: 18px;
+    transition: 1s;
+    color: yellow;
+}
+.welcome-a{
+    color: blue;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.welcome-divs::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: yellow;
+    opacity: 0;
+    transition: .6s;
+    
+
+}
+.welcome-divs:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 2;
+}
+.welcome-divs:hover  .welcome-contents{
+    z-index: 3;
+    color: white;
+}
+.welcome-divs:hover .welcome-h2 {
+    color: white;
+    /* z-index: 3; */
+    
+    }
+.welcome-divs:hover .welcome-p {
+   color: black;
+}
+.welcome-divs:hover i {
+    color: black;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+.featured{
+    width: 100%;
+    height: 150vh;
+    background-color: black;
+    
+}
+.h1-featured{
+    padding-top: 70px;
+text-align: center;
+text-transform: capitalize;
+font-size: 37px;
+color: white;
+}
+.line-featured{
+    margin:20px auto;
+    width: 60px;
+    height: 4px;
+    background-color: yellow;
+
+}
+.container-featured{
+    width: 80%;
+    height: 400px;
+    /* background-color: aqua; */
+    overflow: auto;
+    
+    margin: 30px  auto;
+}
+
+.featured-divs1{
+width: 30%;
+height: 100%;
+/* background-color: antiquewhite; */
+float: left;
+text-align: center;
+}
+.featured-d1{
+    background-image: url(../images/Screenshot\ 2024-03-24\ 230127.png);
+    background-size: cover;
+    
+}
+.featured-d2{
+    margin: 0  5%;
+    background-image: url(../images/Yoga-group-2.jpg);
+    background-size: cover;
+    background-position: right;
+}
+.featured-d3{
+    background-image: url(../images/AdobeStock_386146138_2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.featured-d4{
+    background-image: url(../images/shutterstock_415198510-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.featured-d5{
+    background-image: url(../images/men-muscles-sweating.webp);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    
+}
+.featured-d6{
+    background-image: url(../images/Screenshot\ 2024-03-24\ 232517.png);
+    background-size: cover;
+    background-position: right;
+}
+.featured-divs2{
+    width: 30%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+    float: left;
+    text-align: center;
+}
+.featured-d5{
+    margin: 0  5%;
+}
+.featured-contents{
+    background-color: rgba(0, 0, 0 ,0.7);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 1s;
+}
+.featured-contents:hover{
+opacity: 1;
+}
+
+.featured-h3{
+    padding-top: 150px;
+    color: white;
+    font-size: 32px;
+}
+.featured-p{
+    color: yellow;
+    font-size: 20px;
+    padding: 10px  0  15px  0;
+}
+.featured-icons  i{
+    background-color: yellow;
+    color: black;
+    font-size: 35px;
+    border-radius: 3px;
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+
+
+.offer{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.h1-offer{
+    text-align: center;
+    padding-top: 100px;
+    text-transform: capitalize;
+    color: white;
+}
+.line-offer{
+    height: 4px;
+    width: 60px;
+    background-color: yellow;
+    margin: 15px auto;
+}
+.container-offer{
+    width: 80%;
+    height: 170px;
+    /* background-color: aqua; */
+   margin: 25px  auto;
+}
+.parent-offer{
+    width: 100%;
+    height: 100%;
+}
+.offer-divs1{
+width: 30%;
+height: 100%;
+/* background-color: blue; */
+float: left;
+border: 1px  solid  rgba(255, 255, 255, 0.5);
+border-radius: 4px;
+position: relative;
+}
+.offer-d2{
+    margin: 0 5%;
+}
+.offer-divs2{
+    width: 30%;
+    height: 100%;
+    /* background-color: blue; */
+    float: left;
+    border: 1px  solid  rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    position: relative;
+}
+.offer-d5{
+    margin: 0 5%;
+}
+.contents-offer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.i-offer , .h2-offer{
+    display: inline;
+    padding-top: 30px;
+}
+.i-offer{
+padding-left: 25px;
+font-size: 40px;
+transition: 1s;
+color: yellow;
+}
+.h2-offer{
+    padding-left: 30px;
+    color: white;
+}
+.p-offer{
+    padding: 20px  0;
+    text-align: center;
+    color: yellow;
+    transition: 1s;
+}
+.offer-divs1::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: yellow;
+    opacity: 0;
+    transition: .6s;
+    z-index: 2;
+}
+.offer-divs1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.offer-divs1:hover  .contents-offer{
+z-index: 3;
+}
+.offer-divs1:hover  .i-offer{
+    color: black;
+    
+}
+.offer-divs1:hover .p-offer{
+    color: black;
+}
+
+.offer-divs2::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: yellow;
+    opacity: 0;
+    transition: .6s;
+    z-index: 2;
+}
+.offer-divs2:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.offer-divs2:hover  .contents-offer{
+z-index: 3;
+}
+.offer-divs2:hover  i{
+    color: black;
+    
+    
+}
+.offer-divs2:hover .p-offer{
+    color: black;
+}
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+.choose{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+}
+.contents-choose{
+    height: 400px;
+    width: 40%;
+    margin:30px 100px ;
+    /* background-color: gray; */
+    float: left;
+}
+.h1-choose{
+    text-transform: capitalize;
+    font-size: 37px;
+    padding-left: 30px;
+    padding-top: 15px;
+    color: white;
+}
+.line-choose{
+    height: 4px;
+    width: 60px;
+    background-color: yellow;
+    margin: 20px 35px;
+}
+
+.choose-p1{
+    padding:30px  30px ;
+    color: white;
+}
+.choose-p2{
+    padding: 10px 0;
+    color: yellow;
+    /* background-color: blue; */
+    
+}
+.contents-choose  i{
+    color: yellow;
+    /* display: inline; */
+    border-radius: 50%;
+    padding:10px  30px ;
+    float: left;
+    /* background-color: aqua; */
+}
+.img-choose{
+    height: 450px;
+    width: 30%;
+    /* background-color: aqua; */
+    float: left;
+    margin-top: 30px;
+}
+.pic-choose{
+    width: 100%;
+    height: 90%;
+    /* background-color: blue; */
+    
+}
+
+.points-choose{
+    margin: auto;
+    /* background-color: white; */
+    width: 30%;
+    height: 10%;
+    bottom: 0;
+    position: relative;
+}
+.choose-pnt{
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background-color: white;
+    float: left;
+    margin: 15px 13px;
+}
+.choose-pnt1{
+    background-color: yellow;
+}
+.choose-pnt2:hover{
+background-color: yellow;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.cv{
+ width: 100%;
+ height: 40vh;
+ background-image: url(../images/shutterstock_8466523-heavy-dumbells-scaled.jpg);
+ background-position: cover;
+ background-attachment: fixed;
+ /* background-position: left; */
+}
+.container-cv{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    /* background-color: chartreuse; */
+    margin: auto;
+}
+.divs-cv{
+    height: 100%;
+    width: 22%;
+    /* background-color: blue; */
+    float: left;
+    text-align: center;
+}
+.divs-cv2{
+margin-left: 4%;
+}
+.divs-cv3{
+    margin-left: 4%;
+}
+.divs-cv4{
+    margin-left: 4%;
+}
+.contents-cv{
+    margin-top: 40px;
+}
+.contents-cv  i{
+    padding: 23px  0;
+    color: yellow;
+    font-size: 40px;
+}
+.h-cv{
+    padding: 5px;
+    color: white;
+    font-size: 30px;
+}
+.p-cv{
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+.pricing{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.h1-pricing{
+    text-align: center;
+    padding-top: 70px;
+    text-transform: capitalize;
+    font-size: 40px;
+    color: white;
+}
+.line-pricing{
+    background-color: yellow;
+    width: 60px;
+    height: 4px;
+    margin: 10px auto;
+}
+.container-pricing{
+    width: 80%;
+    height: 400px;
+    margin: 50px auto;
+    position: relative;
+}
+.pricing-divs{
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 8px;
+    /* background-color: yellow; */
+    color: yellow;
+}
+.pricing-div2{
+    margin: 0  5%;
+}
+.pricing-p1{
+    padding: 15px  0;
+}
+.pricing-circle{
+    margin: 15px auto;
+    border: 1px solid white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.pricing-money{
+padding-top:  24px; ;
+}
+.pricing-per{
+    font-size: 23px;
+}
+.pr1{
+    font-size: 20px;
+}
+.pricing-btn{
+    margin-top: 15px;
+    width: 110px;
+    height: 28px;
+    border: 1px solid  white;
+    border-radius :4px; 
+    cursor: pointer;
+    background-color: yellow;
+}
+
+.pricing-divs::after{
+position: absolute;
+content: "";
+top: 0;
+left: 0;
+width: 100%;
+height: 0;
+background-color: yellow;
+opacity: 0;
+transition: .6s;
+
+}
+.pricing-divs:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+
+}
+.pricing-divs:hover{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+.person{
+    width: 100%;
+    height: 320px;
+    /* background-color: red; */
+background-image: url(../images/workout-motivation-18.jpg);
+background-size: cover;
+background-attachment: fixed;
+}
+.person-container{
+    height: 100%;
+    width: 70%;
+    /* background-color: aqua; */
+    margin: auto;
+    position: relative;
+}
+.person-div{
+width: 40%;
+height: 50%;
+/* background-color:white; */
+float: left;
+margin:100px 5%;
+}
+.contents-person{
+    position: relative;
+    /* background-color:green; */
+}
+.img-person1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(../images/24FBB90200000578-0-Today_Show_contributor_and_fitness_expert_Jeff_Halevy_wants_his_-m-10_1422032656296.jpg);
+    background-size: cover;
+    float: left;
+    margin: 10px 10px;
+}
+
+.img-person2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(../images/Legend_Fitness_gymowner_Header.jpg.gif);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin: 10px  10px;
+}
+.h-person{
+    padding: 18px 15px;
+    color: white;
+}
+.p-contents-person{
+    font-size: 25px;
+    color: white;
+}
+
+.p-person{
+    /* background-color: aqua; */
+    /* text-align: center; */
+    margin-top: 30px;
+    color: yellow;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+.team{
+    width: 100%;
+    height: 85vh;
+    background-color:black;
+}
+.h1-team{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+    padding-top: 100px;
+    color: white;
+}
+.line-team{
+    margin: 10px auto;
+    width: 60px;
+    height: 4px;
+    background-color: yellow;
+}
+.container-team{
+    width: 70%;
+    height: 300px;
+    /* background-color: aqua; */
+    /* position: relative; */
+    margin:80px auto;
+}
+.team-contents{
+    overflow: auto;
+}
+.team-items{
+    height: 100%;
+    width: 30%;
+    background-color: yellow;
+    float: left;
+    text-align: center;
+    padding: 14px 18px;
+    position: relative;
+}
+.team-middle{
+    margin:0 5% ;
+}
+.img-team{
+    /* background-color: aqua; */
+    margin: auto;
+    width: 95%;
+    position: relative;
+}
+.img-team  img{
+    width: 100%;
+}
+.icons-team{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    /* transition: 1s; */
+}
+.team-items:hover .icons-team{
+    visibility: visible;
+    opacity: 1;
+}
+.team-items::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: black;
+    opacity: 0;
+transition: 2s;
+}
+.team-items:hover::after{
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+}
+.icons-team  a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(70, 70, 245);
+    color: white;
+    margin-left: auto;
+}
+.icons-team  a i{
+    line-height: 40px;
+    font-size: 22px;
+}
+.info-team{
+    padding: 10px 0;
+}
+.h2-team{
+    text-transform: capitalize;
+    transition: 1s;
+}
+.p-team{
+    text-transform: uppercase;
+}
+.team-items:hover .h2-team{
+    color: white;
+}
+.team-items:hover  .p-team{
+
+}
+
+
+/* -------------------------------------------------------------------------------------------------- */
+
+.news{
+    width: 100%;
+    height: 120vh;
+   background-color: black;
+    /* background-image: url(../images/R.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+.h1-news{
+text-align: center;
+padding-top: 100px;
+font-size: 35px;
+text-transform: capitalize;
+color: white;
+}
+.line-news{
+    width: 65px;
+    height: 4px;
+    background-color: yellow;
+    margin: 10px  auto;
+}
+
+.container-news{
+    width: 80%;
+    height: 450px;
+    /* background-color: yellow; */
+    /* position: relative; */
+    margin: 70px auto;
+}
+.news-contents{
+    overflow: auto;
+}
+.news-item{
+    width: 30%;
+    height: 100%;
+    /* background-color: aqua; */
+    float: left;
+    /* text-align: center; */
+    padding: 15px  20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    
+}
+.news-item::after{
+position: absolute;
+content: "";
+top: 0;
+left: 0;
+width: 100%;
+height:0;
+background-color:white;
+opacity: 0;
+transition: 1s;
+}
+.news-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+}
+.news-middle{
+    margin: 0 5%;
+}
+.image-news{
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 60%;
+}
+.image-news  img{
+    left: 0;
+}
+.icons-news  i{
+    padding: 0   10px;
+    font-size: 12px;
+    color:yellow;
+}
+.h2-news{
+    color: white;
+    padding: 6px  0px;
+}
+.p-news{
+    color: white;
+    padding: 5px  0;
+}
+.news-item  a{
+    text-decoration: none;
+    /* padding-top:30px; */
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+
+.end{
+    width: 100%;
+    height: 40vh;
+    /* background-color: rgb(15, 12, 12); */
+    background-color: black;
+}
+.contents-end{
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.img-end{
+    margin-top: 20px;
+    width: 140px;
+    height: 38%;
+}
+.icons-end{
+    margin: 15px auto;
+}
+
+.end-icons{
+    font-size: 50px;
+    padding: 0  5px;
+    color: yellow;
+    
+}
+.end-icons:hover{
+    color:rgb(222, 191, 15);
+}
+.p-end{
+    color: white;
+    opacity: .6;
+    font-size: 12px;
+}
